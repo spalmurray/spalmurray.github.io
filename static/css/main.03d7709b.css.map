@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.03d7709b.css","mappings":"AAAA,KACE,sBACF,CAEA,KACE,gBACF,CAEA,EACE,aACF","sources":["App.css"],"sourcesContent":["body {\n  font-family: sans-serif;\n}\n\n.App {\n  margin: 25px 50px;\n}\n\na {\n  margin: 0 10px;\n}\n\n.my-name {\n\n}\n"],"names":[],"sourceRoot":""}
