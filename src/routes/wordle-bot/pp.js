@@ -1,0 +1,22 @@
+import {Link} from "react-router-dom";
+
+export default function Pp() {
+    return (
+        <>
+            <h2><code>wordle-bot</code></h2>
+            <a href="https://github.com/spalmurray/wordle-bot">Source Code</a>
+            <Link to="/wordle-bot/terms-of-service">Terms of Service</Link>
+            <Link to="/wordle-bot/privacy-policy">Privacy Policy</Link>
+            <h1 className="tos">Privacy Policy</h1>
+            <p className="tos">
+                In this document, ‘wordle-bot’ refers specifically to the Discord API client deployed by me, Spencer Murray (also known as spalmurray), on the Amazon Web Services Elastic Compute Cloud instance that I rent and operate. While the source code for wordle-bot is available on GitHub under an MIT Licence, this is not what I am referring to here as ‘wordle-bot’ and I will take no responsibility for any harm caused by another Discord API client deployment derived from this source code, as I can only verify the integrity of and thus be reasonably held accountable for the specific deployment that I oversee. Additionally, the term ‘user’ refers to any participant in a server that has invited wordle-bot, a ‘score’ is an integer between 1 and 7, inclusive, and a ‘Wordle game’ is a specific instance of the word game, Wordle, uniquely identified by a positive integer (‘Wordle 219’ for example).
+            </p>
+            <p className="tos">
+                wordle-bot processes all messages in all channels it has permission to read from, but it does not collect or store any data from these messages unless a messages fits the criteria outlined in the next two sentences. wordle-bot collects and stores the Discord user identifier and one score for each Wordle game submitted by each user along with the derived values for the number of scores submitted, the number of scores submitted which are less than 7 (the number of winning scores), and the running average score of all winning scores submitted by the user. The only score and Wordle game data collected and stored are those sent as Discord messages by the user in a Discord channel that wordle-bot can read, that are in the proper format (a message that starts with ‘Wordle 219 4/6’ is an example of a properly formatted message that wordle-bot will gather data from). Any message that does not match this format will not have any data collected or stored from it. The data collected and stored by wordle-bot is used exclusively for the purpose of providing scoreboards to users so that they can compare their statistics with their friends’. The disk where the data stored by wordle-bot reside is encrypted by an XTS-AES-256 cipher with locally stored keys and is only accessible by wordle-bot and me, Spencer Murray. Any user may contact me by email (spencer@spalmurray.com) to request the deletion of their data at any time and I will carry out the request within 30 days or within an otherwise agreed upon time frame, provided their request contains their unique Discord user identifier. Alternatively, there is a wordle-bot command you may enter in Discord that will delete your data without needing to contact me. Please see the wordle-bot help (“!wb help” in Discord) for the usage of this command.
+            </p>
+            <p className="tos">
+                If you have any questions or concerns please get in touch with me at spencer@spalmurray.com.
+            </p>
+        </>
+    );
+}
