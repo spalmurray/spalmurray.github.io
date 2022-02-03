@@ -12,7 +12,6 @@ ReactDOM.render(
             <Route path="/wordle-bot/terms-of-service" element={<Tos />} />
             <Route path="/wordle-bot/privacy-policy" element={<Pp />} />
         </Routes>
-    </BrowserRouter>
-    ,
+    </BrowserRouter>,
   document.getElementById('root')
 );
